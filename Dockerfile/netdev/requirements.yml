@@ -1,0 +1,18 @@
+---
+collections:
+   - name: ansible.netcommon
+   - name: arista.avd
+   - name: arista.cvp
+   - name: arista.eos
+   - name: cisco.ios
+   - name: cisco.nxos
+   - name: community.general
+   - name: davidban77.gns3
+   - name: fortinet.fortimanager
+   - name: fortinet.fortios
+   - name: netbox.netbox
+   - name: nleiva.capirca_acl
+   - name: paloaltonetworks.panos
+
+roles:
+   - name: batfish.base

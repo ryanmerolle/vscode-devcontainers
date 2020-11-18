@@ -1,0 +1,37 @@
+{
+    "name": "Network Development using a Dockerfile",
+    "build": { 
+      "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "netdev", // Matches non-root user built into image
+    "workspaceFolder": "/projects",
+    "updateRemoteUserUID": true, // Corrects docker volume permission issues for Linux & Windows due to root ownership of files
+    
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/zsh",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "editor.formatOnPaste": true,
+        "python.autoComplete.addBrackets": true,
+        "sync.quietSync": true,
+        "files.trimTrailingWhitespace": true,
+        "editor.quickSuggestions": true,
+        "editor.minimap.enabled": false
+    },
+  
+  "extensions": [
+    "ms-python.python",
+    "vscoss.vscode-ansible",
+    "timonwong.ansible-autocomplete",
+    "codezombiech.gitignore",
+    "tuxtina.json2yaml",
+    "jebbs.markdown-extended",
+    "eamodio.gitlens",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint"
+  ],
+
+    "containerEnv": {
+        "ANSIBLE_CONFIG": "./ansible.cfg"
+    }
+  }
